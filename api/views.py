@@ -11,6 +11,7 @@ class AuthorViewSet(ModelViewSet):
     queryset = Author.objects.all()
     parser_classes = (JSONParser,)
 
+
 class BookViewSet(ModelViewSet):
     serializer_class = BookSerializer
     queryset = Book.objects.all()

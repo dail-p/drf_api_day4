@@ -14,7 +14,7 @@ class Author(models.Model):
     name = models.CharField(max_length=255)
     email = models.EmailField()
     # график известности автора по годам.
-    # поле состоит из списка tuple-ов (год, кол.просмотров всех книг)
+    # поле состоит из словоря (год = кол.просмотров всех книг)
     fame = CustomPickledObjectField(default=dict)
 
 
@@ -23,5 +23,5 @@ class Book(models.Model):
     body = models.TextField()
     authors = models.ManyToManyField('Author')
     # график популярности книги по годам.
-    # поле состоит из списка tuple-ов (год, кол.просмотров)
+    # поле состоит из словоря tuple-ов (год = кол.просмотров)
     fame = CustomPickledObjectField(default=dict)

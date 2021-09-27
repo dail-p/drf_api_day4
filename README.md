@@ -23,7 +23,7 @@ git clone https://github.com/dail-p/drf_api_day4.git
 
 Пример обращения:
 - [`/library?title=book2`](http://localhost:8000/library?title=book2) - выведет книги с названием book2;
-- [`/library?authors__name=author2`](http://localhost:8000/library) - выведет книги, в акторах которых есть author2;
+- [`/library?authors__name=author2`](http://localhost:8000/library) - выведет книги, в авторах которых есть author2;
 
 Для того, чтобы удалить или редактировать запись нужно перейти к конкретной записи по ее id. 
 Пример:
